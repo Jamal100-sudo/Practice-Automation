@@ -3,7 +3,8 @@
 <suite name="TestSuite">
   <test name="Test">
     <classes>
-      <class name="Tests.FormFieldTest"/>
+		<class name="Tests.HomePageTest"/>
+		<class name="Tests.FormFieldTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
