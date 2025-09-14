@@ -3,14 +3,15 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.FormFieldTest">
+      <class name="Tests.AlertTest">
         <methods>
+          <include name="verifyPopupButtonClick"/>
           <include name="initPage"/>
+          <include name="verifyPromptPopupWithName"/>
           <include name="setUp"/>
-          <include name="enterValidDetails"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.FormFieldTest -->
+      </class> <!-- Tests.AlertTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

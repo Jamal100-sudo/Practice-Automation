@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-
+import Pages.AlertPage;
 import Pages.FormFieldPage;
 import Pages.HomePage;
 
@@ -17,6 +17,7 @@ public class TestBasePage {
     protected WebDriver driver;
     protected HomePage homePage;
     protected FormFieldPage formField;
+    protected AlertPage alertPage;
 
     @BeforeClass
     public void setUp() {
@@ -32,6 +33,7 @@ public class TestBasePage {
     public void initPage() {
         homePage = new HomePage(driver);
         formField = new FormFieldPage(driver);
+        alertPage = new AlertPage(driver);
     }
 
 

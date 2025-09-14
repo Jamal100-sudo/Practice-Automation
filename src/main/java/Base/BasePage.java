@@ -83,5 +83,22 @@ public class BasePage {
     	alert.accept();
     	return AlertText;	
     }
+    
+    public String AcceptAlertWithInput(String name) throws InterruptedException
+    {
+    	Alert alert = driver.switchTo().alert();
+    	String AlertText = alert.getText();
+    	alert.sendKeys(name);
+    	alert.accept();	
+    	return AlertText;
+    }
+    
+    public String DismissAlertWithText() throws InterruptedException
+    {
+    	Alert alert = driver.switchTo().alert();
+    	String AlertText = alert.getText();
+    	alert.dismiss();
+    	return AlertText;	
+    }
 }
 
