@@ -3,15 +3,18 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.AlertTest">
+      <class name="Tests.WindowOperationsTest">
         <methods>
-          <include name="verifyPopupButtonClick"/>
+          <include name="VerifyNewWindowOpensSuccessfully"/>
+          <include name="VerifyClickWindowOperations"/>
           <include name="initPage"/>
-          <include name="verifyPromptPopupWithName"/>
           <include name="setUp"/>
+          <include name="VerifyNewTabOpensSuccessfully"/>
+          <include name="VerifyReplaceWindowOpensSuccessfully"/>
+          <include name="storeParentWindowHandle"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.AlertTest -->
+      </class> <!-- Tests.WindowOperationsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

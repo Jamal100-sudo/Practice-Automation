@@ -1,109 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-14T18:27:11 IST" name="TestSuite" finished-at="2025-09-14T18:28:39 IST" duration-ms="88165">
+  <suite started-at="2025-09-21T18:09:00 IST" name="TestSuite" finished-at="2025-09-21T18:12:12 IST" duration-ms="192137">
     <groups>
     </groups>
-    <test started-at="2025-09-14T18:27:11 IST" name="Test" finished-at="2025-09-14T18:28:39 IST" duration-ms="88165">
-      <class name="Tests.FormFieldTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:27:11 IST" name="setUp" finished-at="2025-09-14T18:27:56 IST" duration-ms="44780" status="PASS">
+    <test started-at="2025-09-21T18:09:00 IST" name="Test" finished-at="2025-09-21T18:12:12 IST" duration-ms="192137">
+      <class name="Tests.WindowOperationsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:08 IST" name="setUp" finished-at="2025-09-21T18:11:46 IST" duration-ms="38390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:27:56 IST" name="initPage" finished-at="2025-09-14T18:27:56 IST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="storeParentWindowHandle()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:46 IST" name="storeParentWindowHandle" finished-at="2025-09-21T18:11:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storeParentWindowHandle -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:46 IST" name="initPage" finished-at="2025-09-21T18:11:46 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyFormFieldButtonClick()[pri:1, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:27:56 IST" name="verifyFormFieldButtonClick" finished-at="2025-09-14T18:28:12 IST" duration-ms="15755" status="PASS">
+        <test-method signature="VerifyClickWindowOperations()[pri:1, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:46 IST" name="VerifyClickWindowOperations" finished-at="2025-09-21T18:11:54 IST" duration-ms="7267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickWindowOperations -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:54 IST" name="initPage" finished-at="2025-09-21T18:11:54 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="VerifyNewTabOpensSuccessfully()[pri:2, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:54 IST" name="VerifyNewTabOpensSuccessfully" finished-at="2025-09-21T18:11:57 IST" depends-on-methods="Tests.WindowOperationsTest.VerifyClickWindowOperations" duration-ms="3176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewTabOpensSuccessfully -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:57 IST" name="initPage" finished-at="2025-09-21T18:11:57 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="VerifyReplaceWindowOpensSuccessfully()[pri:3, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:11:57 IST" name="VerifyReplaceWindowOpensSuccessfully" finished-at="2025-09-21T18:12:05 IST" depends-on-methods="Tests.WindowOperationsTest.VerifyNewTabOpensSuccessfully, Tests.WindowOperationsTest.VerifyClickWindowOperations" duration-ms="8247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReplaceWindowOpensSuccessfully -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:12:05 IST" name="initPage" finished-at="2025-09-21T18:12:05 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="VerifyNewWindowOpensSuccessfully()[pri:3, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:12:05 IST" name="VerifyNewWindowOpensSuccessfully" finished-at="2025-09-21T18:12:07 IST" depends-on-methods="Tests.WindowOperationsTest.VerifyReplaceWindowOpensSuccessfully, Tests.WindowOperationsTest.VerifyNewTabOpensSuccessfully, Tests.WindowOperationsTest.VerifyClickWindowOperations" duration-ms="1467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewWindowOpensSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WindowOperationsTest@5e17553a]" started-at="2025-09-21T18:12:07 IST" name="tearDown" finished-at="2025-09-21T18:12:12 IST" duration-ms="5489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.WindowOperationsTest -->
+      <class name="Tests.FormFieldTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:09:51 IST" name="setUp" finished-at="2025-09-21T18:10:01 IST" duration-ms="10362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:10:01 IST" name="initPage" finished-at="2025-09-21T18:10:01 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyFormFieldButtonClick()[pri:1, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:10:01 IST" name="verifyFormFieldButtonClick" finished-at="2025-09-21T18:10:03 IST" duration-ms="1813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFormFieldButtonClick -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:28:12 IST" name="initPage" finished-at="2025-09-14T18:28:12 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:10:03 IST" name="initPage" finished-at="2025-09-21T18:10:03 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="enterValidDetails()[pri:2, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:28:12 IST" name="enterValidDetails" finished-at="2025-09-14T18:28:14 IST" duration-ms="1683" status="PASS">
+        <test-method signature="enterValidDetails()[pri:2, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:10:03 IST" name="enterValidDetails" finished-at="2025-09-21T18:10:04 IST" duration-ms="1233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterValidDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.FormFieldTest@2ca26d77]" started-at="2025-09-14T18:28:14 IST" name="tearDown" finished-at="2025-09-14T18:28:19 IST" duration-ms="5356" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.FormFieldTest@72d6b3ba]" started-at="2025-09-21T18:10:04 IST" name="tearDown" finished-at="2025-09-21T18:10:10 IST" duration-ms="5497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.FormFieldTest -->
       <class name="Tests.AlertTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:27:11 IST" name="setUp" finished-at="2025-09-14T18:27:16 IST" duration-ms="4861" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:10:10 IST" name="setUp" finished-at="2025-09-21T18:10:52 IST" duration-ms="42414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:27:16 IST" name="initPage" finished-at="2025-09-14T18:28:24 IST" duration-ms="68179" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:10:52 IST" name="initPage" finished-at="2025-09-21T18:10:52 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyPopupButtonClick()[pri:1, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:24 IST" name="verifyPopupButtonClick" finished-at="2025-09-14T18:28:32 IST" duration-ms="7380" status="PASS">
+        <test-method signature="verifyPopupButtonClick()[pri:1, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:10:52 IST" name="verifyPopupButtonClick" finished-at="2025-09-21T18:11:01 IST" duration-ms="8723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPopupButtonClick -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="initPage" finished-at="2025-09-14T18:28:32 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:01 IST" name="initPage" finished-at="2025-09-21T18:11:01 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyAlertPopup()[pri:2, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="verifyAlertPopup" finished-at="2025-09-14T18:28:32 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="153" status="PASS">
+        <test-method signature="verifyAlertPopup()[pri:2, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:01 IST" name="verifyAlertPopup" finished-at="2025-09-21T18:11:01 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAlertPopup -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="initPage" finished-at="2025-09-14T18:28:32 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:01 IST" name="initPage" finished-at="2025-09-21T18:11:01 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyAcceptConfirmPopup()[pri:3, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="verifyAcceptConfirmPopup" finished-at="2025-09-14T18:28:32 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="327" status="PASS">
+        <test-method signature="verifyAcceptConfirmPopup()[pri:3, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:01 IST" name="verifyAcceptConfirmPopup" finished-at="2025-09-21T18:11:02 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAcceptConfirmPopup -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="initPage" finished-at="2025-09-14T18:28:32 IST" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="initPage" finished-at="2025-09-21T18:11:02 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyPromptPopupWithName()[pri:5, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:32 IST" name="verifyPromptPopupWithName" finished-at="2025-09-14T18:28:33 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPromptPopupWithName -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:33 IST" name="initPage" finished-at="2025-09-14T18:28:33 IST" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPage -->
-        <test-method signature="verifyDismissConfirmPopup()[pri:4, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:33 IST" name="verifyDismissConfirmPopup" finished-at="2025-09-14T18:28:33 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick, Tests.AlertTest.verifyAcceptConfirmPopup" duration-ms="388" status="PASS">
+        <test-method signature="verifyDismissConfirmPopup()[pri:4, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="verifyDismissConfirmPopup" finished-at="2025-09-21T18:11:02 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick, Tests.AlertTest.verifyAcceptConfirmPopup" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDismissConfirmPopup -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:33 IST" name="initPage" finished-at="2025-09-14T18:28:33 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="initPage" finished-at="2025-09-21T18:11:02 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyDismissPromptPopup()[pri:6, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:33 IST" name="verifyDismissPromptPopup" finished-at="2025-09-14T18:28:33 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick, Tests.AlertTest.verifyPromptPopupWithName" duration-ms="364" status="PASS">
+        <test-method signature="verifyPromptPopupWithName()[pri:5, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="verifyPromptPopupWithName" finished-at="2025-09-21T18:11:02 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPromptPopupWithName -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="initPage" finished-at="2025-09-21T18:11:02 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyDismissPromptPopup()[pri:6, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:02 IST" name="verifyDismissPromptPopup" finished-at="2025-09-21T18:11:03 IST" depends-on-methods="Tests.AlertTest.verifyPopupButtonClick, Tests.AlertTest.verifyPromptPopupWithName" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDismissPromptPopup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AlertTest@2ca923bb]" started-at="2025-09-14T18:28:33 IST" name="tearDown" finished-at="2025-09-14T18:28:39 IST" duration-ms="5932" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AlertTest@163370c2]" started-at="2025-09-21T18:11:03 IST" name="tearDown" finished-at="2025-09-21T18:11:08 IST" duration-ms="5448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.AlertTest -->
       <class name="Tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@35b74c5c]" started-at="2025-09-14T18:27:11 IST" name="setUp" finished-at="2025-09-14T18:27:16 IST" duration-ms="5173" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@2ca26d77]" started-at="2025-09-21T18:09:00 IST" name="setUp" finished-at="2025-09-21T18:09:45 IST" duration-ms="45047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HomePageTest@35b74c5c]" started-at="2025-09-14T18:27:16 IST" name="initPage" finished-at="2025-09-14T18:28:01 IST" duration-ms="44364" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HomePageTest@2ca26d77]" started-at="2025-09-21T18:09:45 IST" name="initPage" finished-at="2025-09-21T18:09:45 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyHomePageIsAccessible()[pri:0, instance:Tests.HomePageTest@35b74c5c]" started-at="2025-09-14T18:28:01 IST" name="verifyHomePageIsAccessible" finished-at="2025-09-14T18:28:01 IST" duration-ms="179" status="PASS">
+        <test-method signature="verifyHomePageIsAccessible()[pri:0, instance:Tests.HomePageTest@2ca26d77]" started-at="2025-09-21T18:09:45 IST" name="verifyHomePageIsAccessible" finished-at="2025-09-21T18:09:45 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageIsAccessible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@35b74c5c]" started-at="2025-09-14T18:28:01 IST" name="tearDown" finished-at="2025-09-14T18:28:07 IST" duration-ms="5605" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@2ca26d77]" started-at="2025-09-21T18:09:45 IST" name="tearDown" finished-at="2025-09-21T18:09:51 IST" duration-ms="5473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

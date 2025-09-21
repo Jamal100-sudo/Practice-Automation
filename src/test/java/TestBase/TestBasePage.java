@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import Pages.AlertPage;
 import Pages.FormFieldPage;
 import Pages.HomePage;
+import Pages.WindowOperations;
 
 public class TestBasePage {
 
@@ -18,6 +19,7 @@ public class TestBasePage {
     protected HomePage homePage;
     protected FormFieldPage formField;
     protected AlertPage alertPage;
+    protected WindowOperations windowOperations;
 
     @BeforeClass
     public void setUp() {
@@ -34,6 +36,7 @@ public class TestBasePage {
         homePage = new HomePage(driver);
         formField = new FormFieldPage(driver);
         alertPage = new AlertPage(driver);
+        windowOperations = new WindowOperations(driver);
     }
 
 
