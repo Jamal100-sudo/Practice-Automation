@@ -3,18 +3,14 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.WindowOperationsTest">
+      <class name="Tests.CalenderTest">
         <methods>
-          <include name="VerifyNewWindowOpensSuccessfully"/>
-          <include name="VerifyClickWindowOperations"/>
           <include name="initPage"/>
+          <include name="verifyCalendarWithValidDate"/>
           <include name="setUp"/>
-          <include name="VerifyNewTabOpensSuccessfully"/>
-          <include name="VerifyReplaceWindowOpensSuccessfully"/>
-          <include name="storeParentWindowHandle"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.WindowOperationsTest -->
+      </class> <!-- Tests.CalenderTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

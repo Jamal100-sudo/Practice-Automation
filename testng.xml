@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
+<suite name="TestSuite" parallel="classes" thread-count="3">
+	<listeners> <listener class-name="Utils.ExtentTestListener"/> </listeners>
   <test name="Test">
     <classes>
 		<class name="Tests.HomePageTest"/>
 		<class name="Tests.FormFieldTest"/>
 		<class name="Tests.AlertTest"/>
-        <class name="Tests.WindowOperationsTest"/>
+		<class name="Tests.WindowOperationsTest"/>
+		<class name="Tests.FileDownloadTest"/>
+		<class name="Tests.CalenderTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

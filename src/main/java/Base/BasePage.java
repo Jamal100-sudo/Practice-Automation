@@ -44,9 +44,9 @@ public class BasePage {
     }
 
     // Scroll to an element
-    public void scrollToElement(WebElement locator) 
+    public void scrollToElement(WebElement element) 
     {
-        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", locator);
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
 
