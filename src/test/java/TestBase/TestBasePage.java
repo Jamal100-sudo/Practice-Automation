@@ -46,7 +46,7 @@ public class TestBasePage {
             put("plugins.always_open_pdf_externally", true); // ensures PDF is downloaded not opened
         }});
 
-    	driver = new ChromeDriver();
+    	driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://practice-automation.com/");
         JavascriptExecutor js = (JavascriptExecutor) driver;

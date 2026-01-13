@@ -1,13 +1,26 @@
-package Utils;
+package listeners;
 
+
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import org.testng.*;
+import listeners.ExtentManager;
+
+import org.testng.ITestContext;
 
 public class ExtentTestListener implements ITestListener {
 
     private static ExtentReports extent = ExtentManager.getExtent();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    
+    @Override
+    public void onStart(ITestContext context) {
+        System.out.println("Extent Listener Started");
+    }
 
     @Override
     public void onTestStart(ITestResult result) {
@@ -30,9 +43,10 @@ public class ExtentTestListener implements ITestListener {
     public void onTestSkipped(ITestResult result) {
         test.get().log(Status.SKIP, "Test Skipped");
     }
-
+    
     @Override
     public void onFinish(ITestContext context) {
-        extent.flush();
+        extent.flush();   // 🔥 mandatory
     }
+
 }
