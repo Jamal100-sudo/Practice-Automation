@@ -1,0 +1,36 @@
+name: Selenium Automation CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Install Chrome
+      uses: browser-actions/setup-chrome@v1
+
+    - name: Run Selenium Tests
+      run: mvn clean test
+      continue-on-error: true
+
+    - name: Upload Extent Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: extent-report
+        path: target/extent-report
